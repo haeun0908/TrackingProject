@@ -57,7 +57,7 @@ pip install -r requirements.txt
 ```
 pip install pyngrok
 ```
-![ngrok 설치]()
+![ngrok 설치](https://github.com/haeun0908/TrackingProject/blob/main/images/ngrok%20%EC%84%A4%EC%B9%98.png)
 
 #### 3. ngrok 홈페이지에 로그인 (계정이  없으면 먼저 가입)
 https://dashboard.ngrok.com/get-started/setup/windows
@@ -67,17 +67,17 @@ https://dashboard.ngrok.com/get-started/setup/windows
 ```
 choco install ngrok
 ```
-![Chocolatey를 통해 ngrok를 설치]()
+![Chocolatey를 통해 ngrok를 설치](https://github.com/haeun0908/TrackingProject/blob/main/images/Chocolatey%EB%A5%BC%20%ED%86%B5%ED%95%B4%20ngrok%EB%A5%BC%20%EC%84%A4%EC%B9%98.png)
 
 #### 5. 기본 ngrok.yml 구성 파일에 authtoken을 추가
 💡 대부분의 경우 ngrok을 정상적으로 사용하려면 명령 프롬프트를 '관리자 권한'으로 실행<br><br>
-![authtoken을 추가1]()<br>
+![authtoken을 추가1](https://github.com/haeun0908/TrackingProject/blob/main/images/authtoken%EC%9D%84%20%EC%B6%94%EA%B0%801.png)<br>
 “Your Authtoken” 부분에 토큰이 표시. 이걸 복사해서...<br>
 ```
 ngrok config add-authtoken YOUR_AUTHTOKEN
 ```
 여기서 YOUR_AUTHTOKEN 부분은 복사한 토큰으로 변경<br>
-![authtoken을 추가2]()
+![authtoken을 추가2](https://github.com/haeun0908/TrackingProject/blob/main/images/authtoken%EC%9D%84%20%EC%B6%94%EA%B0%802.png)
 
 ## 실행 방법
 💡 Flask와 ngrok은 동시에 실행돼야 함
@@ -86,23 +86,22 @@ ngrok config add-authtoken YOUR_AUTHTOKEN
 ```
 python main.py
 ```
-![Flask 서버 먼저 실행]()
+![Flask 서버 먼저 실행](https://github.com/haeun0908/TrackingProject/blob/main/images/Flask%20%EC%84%9C%EB%B2%84%20%EB%A8%BC%EC%A0%80%20%EC%8B%A4%ED%96%89.png)
 
 #### 2. ngrok CLI 버전으로 실행
 💡 명령 프롬프트를 새로 키고 아래 명령어 실행 (가상 환경 X)
 ```
 ngrok http 5000
 ```
-![ngrok CLI 버전으로 실행]()
+![스마트폰에서 아래 주소를 브라우저에 입력1](https://github.com/haeun0908/TrackingProject/blob/main/images/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0%EC%97%90%EC%84%9C%20%EC%95%84%EB%9E%98%20%EC%A3%BC%EC%86%8C%EB%A5%BC%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90%20%EC%9E%85%EB%A0%A51.png)
 
 #### 3. 스마트폰에서 아래 주소를 브라우저에 입력
-![스마트폰에서 아래 주소를 브라우저에 입력1]()<br>
-![스마트폰에서 아래 주소를 브라우저에 입력2]()<br>
-![스마트폰에서 아래 주소를 브라우저에 입력3]()<br>
+![스마트폰에서 아래 주소를 브라우저에 입력2](https://github.com/haeun0908/TrackingProject/blob/main/images/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0%EC%97%90%EC%84%9C%20%EC%95%84%EB%9E%98%20%EC%A3%BC%EC%86%8C%EB%A5%BC%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90%20%EC%9E%85%EB%A0%A52.png)<br>
+![스마트폰에서 아래 주소를 브라우저에 입력3](https://github.com/haeun0908/TrackingProject/blob/main/images/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0%EC%97%90%EC%84%9C%20%EC%95%84%EB%9E%98%20%EC%A3%BC%EC%86%8C%EB%A5%BC%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90%20%EC%9E%85%EB%A0%A53.jpg)<br>
 
 ## 🛡️ 에러가 발생한다면
 Windows 보안 → 바이러스 및 위협 방지 → “설정 관리” → “제외 추가 또는 제거”에서 ngrok.exe를 예외 목록에 추가
 ```
 C:\ProgramData\chocolatey\lib\ngrok\tools\ngrok.exe
 ```
-![에러가 발생한다면]()
+![에러가 발생한다면](https://github.com/haeun0908/TrackingProject/blob/main/images/%EC%97%90%EB%9F%AC%EA%B0%80%20%EB%B0%9C%EC%83%9D%ED%95%9C%EB%8B%A4%EB%A9%B4.png)
